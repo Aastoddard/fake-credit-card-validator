@@ -1,7 +1,7 @@
 #include "credit-card-info.hpp"
 
 CreditCardInfo::CreditCardInfo()
-: _cardInfo(1111111111111111)
+: _cardInfo("1111111111111111")
 {
     
 }
@@ -11,12 +11,12 @@ CreditCardInfo::~CreditCardInfo()
 
 }
 
-void CreditCardInfo::setCardInfo(unsigned cardNum)
+void CreditCardInfo::setCardInfo(long cardNum)
 {
 
 }
 
-unsigned CreditCardInfo::getCardInfo()
+std::string CreditCardInfo::getCardInfo() const
 {
-    return 0;
+    return _cardInfo;
 }

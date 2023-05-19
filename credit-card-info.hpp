@@ -1,13 +1,14 @@
+#pragma once
+#include <string>
 class CreditCardInfo 
 {
     public:
     CreditCardInfo();
     ~CreditCardInfo();
 
-    void setCardInfo(unsigned);
-    unsigned getCardInfo();
+    void setCardInfo(long);
+    std::string getCardInfo() const;
     
     private:
-    unsigned _cardInfo;
-
+    std::string _cardInfo;
 };
